@@ -37,5 +37,10 @@ pipeline {
         )
       }
     }
+    stage('') {
+      steps {
+        sh './jenkins/deploy.sh dev'
+      }
+    }
   }
 }
